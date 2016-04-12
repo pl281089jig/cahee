@@ -159,7 +159,7 @@ textarea {
   	}
 
 .ba-about__us {
-	padding: 180px 0 0 100px;
+	padding: 105px 0 0 100px;
 }
 
 .ba-about__us--title {
@@ -167,6 +167,8 @@ textarea {
 	font-weight: 700;
 	line-height: 27px;
 	text-align: left;
+	margin: 0;
+	padding-bottom: 35px;
 }
 
 .ba-container:hover .ba-about-berry__img {
