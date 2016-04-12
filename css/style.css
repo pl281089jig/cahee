@@ -1,8 +1,18 @@
-body{
+@import url(https://fonts.googleapis.com/css?family=Pacifico);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,300,600,900);
 
+body{
+	font-family: 'Raleway' sans-serif;
+	color: #262626;
+	font-size: 17px;
+	font-weight: 300;
+	line-height: 27px;
 }
 
 /* Typography */
+a {text-decoration:none;
+color: #262626;}
+
 a,
 input[type="submit"],
 input[type="button"],
@@ -52,6 +62,115 @@ textarea {
 
 /* Layout */
 .ba-container{
-	padding-left: 20px;
-	padding-right: 20px;
+	padding-left: 15px;
+	padding-right: 15px;
+	max-width: 1500px;
 }
+
+.ba-fresh {
+	min-height: 100vh;
+	background: #FFF url(../img/fresh.jpg)50%;
+	background-size: cover;
+	position: relative;
+}
+
+.ba-logo {
+	padding: 50px 0 0 15px;
+}
+
+.ba-menu {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	display: inline-block;
+}
+
+.ba-menu li {
+	float: left;
+	padding: 70px 15px 0 0;
+}
+
+.ba-menu a {
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 25px;
+	text-transform:uppercase;
+	padding-left: 40px;
+}
+
+.ba-menu a:hover {
+	color:#ff6033;
+	text-decoration: overline;
+}
+
+.ba-fresh-info {
+	padding-top:260px;
+}
+
+.ba-fresh-info__title {
+	font-size: 60px;
+	font-weight: 800;
+	line-height: 25px;
+}
+
+.ba-fresh-info__title--detail {
+	margin-bottom: 30px;
+}
+
+.ba-fresh-info__get a{
+	background-color: #ff6033;
+	color: #FFF;
+	padding: 20px 25px;
+	box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.5);
+
+}
+
+.ba-fresh-info__get a:hover {
+	background-color:#00c4c4;
+	box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.ba-fresh-info__get a:active {
+	top:1px;
+	position:relative;
+	background-color: red;
+}
+
+.ba-scroll {
+	position: absolute;
+	bottom: 69px;
+	left: 50%;
+	width: 24px;
+	height: 40px;
+	background: url(../img/scroll.png) no-repeat 50%;
+}
+
+.ba-scroll:hover {
+	bottom: 71px;
+}
+.ba-scroll:active {
+	bottom: 67px;
+}
+
+.ba-about {
+	background-color: #00c4c4;
+	color: #FFFFFF;
+  	padding: 75px 0 75px 0;
+  	}
+
+.ba-about__us {
+	padding: 180px 0 0 100px;
+}
+
+.ba-about__us--title {
+	font-size: 90px;
+	font-weight: 700;
+	line-height: 27px;
+	text-align: left;
+}
+
+.ba-container:hover .ba-about-berry__img {
+	transform: rotate(360deg);
+  	transition: all 10.0s ease-in;
+}
+
