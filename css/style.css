@@ -42,7 +42,7 @@ button:hover,
 .ba-button:active{
 	top:1px;
 	position:relative;
-	background-color: red;
+
 }
 
 input[type="text"],
@@ -370,6 +370,7 @@ textarea {
 	font-size: 20px;
 	margin-left: 30px;
 	padding: 15px 25px;
+	border:none;
 }
 
 /*Blog*/
@@ -485,6 +486,7 @@ textarea {
 
 .ba-contact__title p{
 	padding: 50px 0;
+	margin: 0;
 }
 
 .ba-contact__contact{
@@ -515,11 +517,29 @@ textarea {
 	background-color: rgba(0, 196, 196, 0.5);
 	border-radius:5px;
 	padding: 10px 50px;
-	right: 70px;
-	position: absolute;
+	position: relative;
+	border:none;
 }
 
-.ba-button__contact:hover {background-color: #00c4c4;}
+::-webkit-input-placeholder {
+   color: #FFF;
+}
+
+:-moz-placeholder { / Firefox 18- /
+   color: #FFF;
+}
+
+::-moz-placeholder {  / Firefox 19+ /
+   color: #FFF;
+}
+
+:-ms-input-placeholder {
+   color: #FFF;
+}
+
+.ba-button__contact:hover {
+	background-color: #00c4c4;
+}
 
 .ba-contact__own {
     color:  #262626;
@@ -534,6 +554,10 @@ textarea {
 	margin: 0;
 }
 
+.ba-contact__own p {
+	padding: 10px 0;
+	margin: 0;
+}
 /*Footer*/
 
 .ba-footer {
@@ -563,4 +587,4 @@ textarea {
 
 .ba-middle {
 padding: 35px 0;
-	}
+}
